@@ -1,0 +1,26 @@
+{% include 'base.html' %}
+
+{% block code %}
+
+
+
+
+This is student page.
+
+{% for stu in stu %}
+
+{{stu}}<hr>
+Primary key: {{stu.id}}<br>
+Student name: {{stu.name}}<br>
+Department: {{stu.departent}}<br>
+Rollnumber: {{stu.rollnumber}}<br>
+CGPA:{{stu.cgpa}}<br>
+
+{% endfor %}
+
+
+
+
+
+
+{% endblock %}
